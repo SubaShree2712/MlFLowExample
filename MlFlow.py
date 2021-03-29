@@ -10,8 +10,9 @@ if __name__ == "__main__":
     mlflow.log_param("val2",b)
     c=a*b
     print("Multiplication :"+str(c))
-    path='C:\Users\smurugan\Desktop\Image_classification\mlflow\reviewed_415_dents_csv.csv'
-    mlflow.log_artifact(path)
+    #path='C:\Users\smurugan\Desktop\Image_classification\mlflow\reviewed_415_dents_csv.csv'
+    output=sys.argv[3]
+    mlflow.log_artifact(output)
     cwd = os.getcwd()    
     print(cwd)
     with open(cwd+'/mlflowfile.txt', 'w') as f:
