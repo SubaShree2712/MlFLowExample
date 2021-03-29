@@ -7,5 +7,5 @@ entry_points:
     parameters:
       a: {type: int, default: 5}
       b: {type: int, default: 6}
-      output: {type: path, default: "C:/Users/smurugan/Desktop/Image_classification/mlflow/reviewed_415_dents_csv.csv"}
+      output: {default: "C:/Users/smurugan/Desktop/Image_classification/mlflow/reviewed_415_dents_csv.csv"}
     command: "python mlflow.py {a} {b} {output}"
