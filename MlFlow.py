@@ -12,7 +12,7 @@ if __name__ == "__main__":
     print("Multiplication :"+str(c))
     #path='C:\Users\smurugan\Desktop\Image_classification\mlflow\reviewed_415_dents_csv.csv'
     output=sys.argv[3]
-    dir_path = output.rsplit("\\", 1)
+    dir_path = output.rsplit("//", 1)
     print(os.chdir(dir_path[0]))
 #     with open(output,'wb'):
 #         mlflow.log_artifact(output)
