@@ -14,7 +14,8 @@ if __name__ == "__main__":
     output=sys.argv[3]
     dir_path = output.rsplit("/", 1)
     print(dir_path)
-    #print(os.chdir(dir_path[0]))
+    os.chdir(dir_path[0])
+    print(os.getcwd())
 #     with open(output,'wb'):
 #         mlflow.log_artifact(output)
     cwd = os.getcwd()    
