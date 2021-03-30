@@ -4,7 +4,7 @@ import sys
 import mlflow.sklearn
 
 if __name__ == "__main__":
-    tracking_uri="http://localhost:5000"
+    tracking_uri="http://127.0.0.1:5000"
     mlflowClient = mlflow.tracking.MlflowClient(tracking_uri)
 
     experiment_to_run=mlflowClient.get_experiment_by_name("firstExperiment")
