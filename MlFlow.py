@@ -24,7 +24,7 @@ if __name__ == "__main__":
     #with open(cwd+'/mlflowfile.txt', 'w') as f:
         #f.write("Fan of Python")
     mlflow.log_metric("mutiplication",c)
-    mlflow.log_artifact(output)
+    #mlflow.log_artifact(output)
     # Fetch the artifact uri root directory
     artifact_uri = mlflow.get_artifact_uri()
     print("Artifact uri: {}".format(artifact_uri))
