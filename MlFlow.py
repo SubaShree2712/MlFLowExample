@@ -5,6 +5,7 @@ import mlflow.sklearn
 
 if __name__ == "__main__":
     mlflow.set_tracking_uri('http://127.0.0.1:5000/')
+    mlflow.start_run()
     a=int(sys.argv[1])
     mlflow.log_param("val1",a)
     b=int(sys.argv[2])
