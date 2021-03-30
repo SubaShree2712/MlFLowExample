@@ -35,7 +35,7 @@ if __name__ == "__main__":
         #mlflow.log_artifact(output)
         # Fetch the artifact uri root directory
         #artifact_uri = mlflow.get_artifact_uri()
-        print("Artifact uri: {}".format(artifact_uri))
+        #print("Artifact uri: {}".format(artifact_uri))
     mlflow.log_artifact(output, artifact_path="features")
         # Fetch a specific artifact uri
         #artifact_uri = mlflow.get_artifact_uri(artifact_path="features/outputfile")
