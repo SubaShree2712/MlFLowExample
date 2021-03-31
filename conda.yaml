@@ -4,4 +4,4 @@ channels:
 dependencies:
   - pip:
     - mlflow
-    - opencv
+    - OpenCV
