@@ -1,5 +1,5 @@
 import mlflow
-from opencv import cv2
+import cv2
 import os
 import sys
 import mlflow.sklearn
