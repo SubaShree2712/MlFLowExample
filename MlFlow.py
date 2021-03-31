@@ -1,4 +1,5 @@
 import mlflow
+import cv2
 import os
 import sys
 import mlflow.sklearn
