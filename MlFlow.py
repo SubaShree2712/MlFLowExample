@@ -5,13 +5,7 @@ import sys
 import mlflow.sklearn
 
 if __name__ == "__main__":
-    tracking_uri='http://127.0.0.1:5000'
-    mlflowClient = mlflow.tracking.MlflowClient(tracking_uri)
-    experiment_to_run=mlflowClient.get_experiment_by_name("firstExperiment")
-    created_run=mlflowClient.create_run(experiment_to_run.experiment_id)
-    os.environ['MLFLOW_TRACKING_URI'] = tracking_uri
-    os.environ['MLFLOW_ARTIFACT_URI'] = tracking_uri
-    #with mlflow.start_run(run_id=run_id, run_name=experiment_name):
+    mlflow.set_tracking_uri("http://127.0.0.1:5000")
     a=int(sys.argv[1])
     mlflow.log_param("val1",a)
     b=int(sys.argv[2])
